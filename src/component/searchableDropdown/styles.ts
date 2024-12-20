@@ -1,0 +1,116 @@
+import { Platform, StyleSheet } from "react-native";
+import { darkTextColor, deviceWidth, isIOS, SourceSansProRegular, textInputColor, transBack, white } from "../../constants";
+
+export const styles = StyleSheet.create({
+    container: {
+        marginTop: 4,
+        backgroundColor: white,
+        alignSelf: 'center',
+        alignItems: 'center',
+        borderRadius: 10,
+        height: 53,
+        width: deviceWidth - 50,
+    },
+    mapView: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        marginVertical: 5,
+    },
+    textView: {
+        backgroundColor: '#eee',
+        flexDirection: 'row',
+        alignItems: 'center',
+        margin: 5,
+        padding: 8,
+        borderRadius: 15,
+    },
+    closeIcon: {
+        backgroundColor: '#f16d6b',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 25,
+        height: 25,
+        borderRadius: 100,
+        marginLeft: 10,
+    },
+    textInputView: {
+        width: deviceWidth - 48,
+        height: 48,
+        borderWidth: 1,
+        borderRadius: 4,
+        paddingLeft: 16,
+        justifyContent: 'center',
+        fontSize: 16,
+        lineHeight: 20,
+        fontFamily: SourceSansProRegular,
+        fontStyle: 'normal',
+        color: darkTextColor,
+        display: "flex",
+        // backgroundColor: 'red',
+        minHeight: 48,
+        maxHeight: 48,
+        textAlignVertical: 'center',
+    },
+    textInputStyle: {
+        width: "100%",
+        justifyContent: 'center',
+        fontSize: 16,
+        lineHeight: 20,
+        fontFamily: SourceSansProRegular,
+        fontStyle: 'normal',
+        color: darkTextColor,
+        textAlignVertical: 'center',
+        marginRight: 16
+    },
+    itemStyle: {
+        flex: 1,
+        flexDirection: 'row',
+        paddingTop: 10,
+        paddingBottom: 10,
+        marginTop: 2,
+        marginLeft: 12,
+        marginRight: 12,
+        backgroundColor: white,
+        borderTopColor: white,
+        borderLeftColor: white,
+        borderRightColor: white,
+        borderBottomColor: textInputColor,
+        borderWidth: 0.5,
+        width: deviceWidth - 58,
+    },
+    textViewItem: {
+        flex: 0.9,
+        flexDirection: 'row', alignItems: 'flex-start'
+    },
+    itemTextStyle: {
+        width: deviceWidth - 58,
+        fontSize: 16,
+        lineHeight: 24,
+        fontFamily: SourceSansProRegular,
+        fontStyle: 'normal',
+        color: darkTextColor,
+    },
+    itemsContainerStyle: {
+        maxHeight: '90%',
+        marginBottom: isIOS ? 30 : 50,
+    },
+    removeItemView: {
+        flex: 0.1,
+        flexDirection: 'row',
+        alignItems: 'flex-end'
+    },
+    closeContainer: {
+        backgroundColor: '#f16d6b',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 25,
+        height: 25,
+        borderRadius: 100,
+        marginLeft: 10,
+    },
+    productNameView: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+    }
+});
